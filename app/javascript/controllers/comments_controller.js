@@ -17,14 +17,37 @@ export default class extends Controller {
     event.stopPropagation();
     const formId = event.params["form"];
     const formBodyId = event.params["body"];
+    const editButtonId = event.params["edit"];
 
     // comment form
     const form = document.getElementById(formId);
+    const commentBody = document.getElementById(formBodyId);
+    const editButton = document.getElementById(editButtonId);
+
+    // edit form
     form.classList.toggle("d-none");
     form.classList.toggle("mt-5");
-
-    // body text
-    const commentBody = document.getElementById(formBodyId);
+    // hide comment body on edit
     commentBody.classList.toggle("d-none");
+    //edit button text
+    this.toggleEditButtonText(editButton)
+  }
+
+  toggleEditButtonText(editButton){
+    if (editButton.innerText === "Edit")
+    {
+      editButton.innerText = "Cancel";
+      this.toggleEditButtonClass(editButton);
+    }
+    else{
+      editButton.innerText = "Edit";
+      this.toggleEditButtonClass(editButton);
+    }
+
+  }
+
+  toggleEditButtonClass(editButton){
+    editButton.classList.toggle("btn-secondary");
+    editButton.classList.toggle("btn-warning");
   }
 }

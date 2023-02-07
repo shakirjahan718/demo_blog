@@ -71,4 +71,7 @@ group :test do
   gem "webdrivers"
 end
 
+# for user authentication
 gem 'devise'
+# for notifications
+gem "noticed", "~> 1.6"
