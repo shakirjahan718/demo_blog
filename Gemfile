@@ -75,3 +75,5 @@ end
 gem 'devise'
 # for notifications
 gem "noticed", "~> 1.6"
+# for searching
+gem "ransack", "~> 3.2"

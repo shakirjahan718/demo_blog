@@ -15,21 +15,23 @@ export default class extends Controller {
     console.log("i clicked the edit button!")
     event.preventDefault();
     event.stopPropagation();
+
+    // Get Ids
     const formId = event.params["form"];
     const formBodyId = event.params["body"];
     const editButtonId = event.params["edit"];
 
-    // comment form
+    // Get elements
     const form = document.getElementById(formId);
     const commentBody = document.getElementById(formBodyId);
     const editButton = document.getElementById(editButtonId);
 
-    // edit form
+    // Show edit form
     form.classList.toggle("d-none");
     form.classList.toggle("mt-5");
-    // hide comment body on edit
+    // Hide comment body text
     commentBody.classList.toggle("d-none");
-    //edit button text
+    // Change edit button text
     this.toggleEditButtonText(editButton)
   }
 
