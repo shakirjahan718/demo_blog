@@ -77,3 +77,5 @@ gem 'devise'
 gem "noticed", "~> 1.6"
 # for searching
 gem "ransack", "~> 3.2"
+# for create pretty URLs and work with human-friendly strings
+gem 'friendly_id', '~> 5.4.0'
