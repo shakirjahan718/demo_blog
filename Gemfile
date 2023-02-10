@@ -81,3 +81,5 @@ gem "ransack", "~> 3.2"
 gem 'friendly_id', '~> 5.4.0'
 # increase your application's performance by reducing the number of queries
 gem 'bullet', group: 'development'
+# Activerecord-Import is a library for bulk inserting data using ActiveRecord.
+gem 'activerecord-import', '~> 1.4', '>= 1.4.1'
