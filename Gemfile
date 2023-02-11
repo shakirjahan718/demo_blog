@@ -83,3 +83,5 @@ gem 'friendly_id', '~> 5.4.0'
 gem 'bullet', group: 'development'
 # Activerecord-Import is a library for bulk inserting data using ActiveRecord.
 gem 'activerecord-import', '~> 1.4', '>= 1.4.1'
+
+gem "wicked", "~> 2.0"
