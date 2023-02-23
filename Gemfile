@@ -85,3 +85,5 @@ gem 'bullet', group: 'development'
 gem 'activerecord-import', '~> 1.4', '>= 1.4.1'
 
 gem "wicked", "~> 2.0"
+# capabilities for sorting and reordering a number of objects in a list
+gem 'acts_as_list'
